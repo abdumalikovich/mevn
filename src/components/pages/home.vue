@@ -1,17 +1,20 @@
 <template>
 	<div class="body-home">
-		
+		<layoutHeader/>
+
+		<div class="screen-one">
+			
+		</div>
+
+		<layoutFooter/>
 	</div>
 </template>
 
 <script>
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable vue/no-unused-components */
 import { mapActions, mapGetters } from 'vuex'
 
-import header from '../layouts/header'
-import footer from '../layouts/footer'
+import layoutHeader from '../layouts/header'
+import layoutFooter from '../layouts/footer'
 
 export default {
 	computed: {
@@ -25,8 +28,8 @@ export default {
 		])
 	},
 	components: {
-		header,
-		footer,
+		layoutHeader,
+		layoutFooter,
 	},
 }
 </script>
